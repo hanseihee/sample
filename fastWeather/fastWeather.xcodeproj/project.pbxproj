@@ -13,6 +13,8 @@
 		BD7A39781BF4608400E52E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7A39761BF4608400E52E08 /* Main.storyboard */; };
 		BD7A397A1BF4608400E52E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7A39791BF4608400E52E08 /* Assets.xcassets */; };
 		BD7A397D1BF4608400E52E08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7A397B1BF4608400E52E08 /* LaunchScreen.storyboard */; };
+		BD8D66AF1BF5B4DD00AD9296 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8D66AE1BF5B4DD00AD9296 /* CoreLocation.framework */; };
+		BD8D66B11BF5C53600AD9296 /* a0020682_4ce94f231ddfd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD8D66B01BF5C53600AD9296 /* a0020682_4ce94f231ddfd.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BD7A39791BF4608400E52E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD7A397C1BF4608400E52E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD7A397E1BF4608400E52E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8D66AE1BF5B4DD00AD9296 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BD8D66B01BF5C53600AD9296 /* a0020682_4ce94f231ddfd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a0020682_4ce94f231ddfd.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8D66AF1BF5B4DD00AD9296 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 		BD7A39611BF4608400E52E08 = {
 			isa = PBXGroup;
 			children = (
+				BD8D66AE1BF5B4DD00AD9296 /* CoreLocation.framework */,
 				BD7A396C1BF4608400E52E08 /* fastWeather */,
 				BD7A396B1BF4608400E52E08 /* Products */,
 			);
@@ -58,6 +64,7 @@
 		BD7A396C1BF4608400E52E08 /* fastWeather */ = {
 			isa = PBXGroup;
 			children = (
+				BD8D66B01BF5C53600AD9296 /* a0020682_4ce94f231ddfd.jpg */,
 				BD7A39701BF4608400E52E08 /* AppDelegate.h */,
 				BD7A39711BF4608400E52E08 /* AppDelegate.m */,
 				BD7A39731BF4608400E52E08 /* ViewController.h */,
@@ -110,6 +117,7 @@
 				TargetAttributes = {
 					BD7A39691BF4608400E52E08 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 66L5MZCU54;
 					};
 				};
 			};
@@ -138,6 +146,7 @@
 			files = (
 				BD7A397D1BF4608400E52E08 /* LaunchScreen.storyboard in Resources */,
 				BD7A397A1BF4608400E52E08 /* Assets.xcassets in Resources */,
+				BD8D66B11BF5C53600AD9296 /* a0020682_4ce94f231ddfd.jpg in Resources */,
 				BD7A39781BF4608400E52E08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = fastWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = greenmonster.com.fastWeather;
 				PRODUCT_NAME = "체감온도";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -272,10 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = fastWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = greenmonster.com.fastWeather;
 				PRODUCT_NAME = "체감온도";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -298,6 +313,7 @@
 				BD7A39831BF4608400E52E08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

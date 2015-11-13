@@ -36,6 +36,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"receiveSigninUpNotification" object:[NSNumber numberWithBool:YES]]; // 좌측메뉴 리셋
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
