@@ -19,6 +19,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     //test
     // 브랜치 테스트
+    // 브랜치 테스트2
+    
 }
 
 - (void)didReceiveMemoryWarning {
